@@ -1,5 +1,5 @@
 📈 Advanced Time Series Forecasting with Neural Networks and Explainability
-
+-----------------------------------------------------------------------------
 
 📌 Project Overview
 
@@ -210,4 +210,6 @@ The LSTM model effectively captures nonlinear temporal dependencies and outperfo
 👨‍💻 Author
 
 Sathasivam Murugesan
+
+
 Advanced Time Series Forecasting Project
