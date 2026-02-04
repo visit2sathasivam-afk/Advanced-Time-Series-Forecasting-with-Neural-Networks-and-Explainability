@@ -2,14 +2,14 @@
 -----------------------------------------------------------------------------
 
 📌 Project Overview
-
+--------------------
 This project implements an advanced multivariate time series forecasting system using a Long Short-Term Memory (LSTM) neural network. The objective is to model complex temporal dependencies, perform multi-step forecasting, optimize model performance through hyperparameter tuning, and interpret predictions using explainability techniques like SHAP.
 
 The system is evaluated against traditional baseline models such as ARIMA and Exponential Smoothing (Holt-Winters) using metrics like RMSE and MAE.
 
 
 🎯 Objectives
-
+--------------
 Generate or acquire a complex multivariate time series dataset.
 
 Engineer temporal features (lags, rolling statistics).
@@ -26,7 +26,7 @@ Provide production-style, reproducible code and analysis.
 
 
 🗂 Project Structure
-
+--------------------
 time_series_project/
 │
 ├── main.py                # End-to-end pipeline
@@ -42,7 +42,7 @@ time_series_project/
 
 
 ⚙️ Tech Stack
-
+---------------
 Python
 
 TensorFlow / Keras
@@ -61,7 +61,7 @@ Matplotlib
 
 
 📊 Dataset
-
+------------
 The dataset is programmatically generated with:
 
 Trend component
@@ -88,7 +88,7 @@ rolling_std
 
 
 🧠 Model Architecture
-
+----------------------
 The LSTM network includes:
 
 Two stacked LSTM layers
@@ -107,7 +107,7 @@ LSTM → Dropout → LSTM → Dropout → Dense
 
 
 🔍 Hyperparameter Optimization
-
+-------------------------------
 Hyperparameters are tuned using Optuna, including:
 
 Number of LSTM units
@@ -118,7 +118,7 @@ The objective minimizes RMSE on validation data.
 
 
 📏 Evaluation Metrics
-
+----------------------
 Models are evaluated using:
 
 RMSE (Root Mean Squared Error)
@@ -137,7 +137,7 @@ Results are summarized in a comparison table.
 
 
 🧪 Baseline Models
-
+--------------------
 ARIMA for statistical time series modeling.
 
 Exponential Smoothing (Holt-Winters) for trend and seasonality capture.
@@ -146,7 +146,7 @@ These provide performance benchmarks against the LSTM model.
 
 
 🧩 Explainability
-
+--------------------
 To interpret predictions, the project applies SHAP (KernelExplainer) to:
 
 Identify influential lag features.
@@ -159,7 +159,7 @@ This improves transparency of the neural network forecasts.
 
 
 ▶️ How to Run
-
+--------------------
 Install dependencies:
 
 pip install numpy pandas scikit-learn tensorflow optuna shap statsmodels matplotlib
@@ -173,7 +173,7 @@ python main.py
 or open the notebook and run all cells.
 
 📌 Outputs
-
+------------
 Trained LSTM model
 
 RMSE and MAE scores
@@ -186,7 +186,7 @@ Forecast visualizations
 
 
 📝 Report
-
+-------------
 The report.txt includes:
 
 Dataset description
@@ -203,13 +203,14 @@ Final conclusions
 
 
 ✅ Conclusion
-
+-----------------
 The LSTM model effectively captures nonlinear temporal dependencies and outperforms classical approaches such as ARIMA and Holt-Winters. Explainability analysis confirms that recent lag values and rolling statistics significantly influence predictions, improving trust and interpretability in deep learning forecasts.
 
 
 👨‍💻 Author
-
+---------------
 Sathasivam Murugesan
 
 
 Advanced Time Series Forecasting Project
+
